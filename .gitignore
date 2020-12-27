@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# ignore .DS_Store for MacOS X
+.DS_Store
+
+# ignore react default readme
+project/view/README.md
