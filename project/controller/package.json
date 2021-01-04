@@ -12,8 +12,10 @@
   "dependencies": {
     "@types/cors": "^2.8.9",
     "@types/express": "^4.17.9",
+    "@types/jsonwebtoken": "^8.5.0",
     "@types/mysql": "^2.15.17",
     "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1"
   },
   "devDependencies": {

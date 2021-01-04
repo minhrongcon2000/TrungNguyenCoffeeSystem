@@ -4,5 +4,6 @@
         "user": "root",
         "password": "johnuwu2000",
         "database": "TrungNguyen"
-    }
+    },
+    "secret_key": "41CE5E4559C1A0A1A1F4DC861915D3B81F8EB85CA4E1F280378BB825B16D5FC9"
 }

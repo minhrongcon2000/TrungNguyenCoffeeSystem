@@ -76,12 +76,23 @@ VALUES(
   );
 -- insert general manager
 INSERT INTO
-  GeneralManager(gm_id, gm_name)
-VALUES('GM01', 'John');
+  GeneralManager(gm_id, gm_name, username, pwd)
+VALUES(
+    'GM01',
+    'John',
+    'GM01',
+    'a8cfcd74832004951b4408cdb0a5dbcd8c7e52d43f7fe244bf720582e05241da'
+  );
 -- insert local manager
 INSERT INTO
-  LocalManager(lm_id, lm_name, gm_id)
-VALUES('LM01', 'Jane', 'GM01');
+  LocalManager(lm_id, lm_name, username, pwd, gm_id)
+VALUES(
+    'LM01',
+    'Jane',
+    'LM01',
+    '4f23798d92708359b734a18172c9c864f1d48044a754115a0d4b843bca3a5332',
+    'GM01'
+  );
 -- insert branch
 INSERT INTO
   Branch

@@ -6,12 +6,16 @@ USE TrungNguyen;
 CREATE TABLE GeneralManager (
   gm_id VARCHAR(15) NOT NULL,
   gm_name VARCHAR(20) NOT NULL,
+  username VARCHAR(20) NOT NULL,
+  pwd VARCHAR(255) NOT NULL,
   PRIMARY KEY (gm_id)
 );
 CREATE TABLE LocalManager (
   lm_id VARCHAR(15) NOT NULL,
   lm_name VARCHAR(20) NOT NULL,
   gm_id VARCHAR(15) NOT NULL,
+  username VARCHAR(20) NOT NULL,
+  pwd VARCHAR(255) NOT NULL,
   PRIMARY KEY (lm_id),
   FOREIGN KEY (gm_id) REFERENCES GeneralManager(gm_id)
 );
@@ -28,7 +32,6 @@ CREATE TABLE Product (
   product_name VARCHAR(50) NOT NULL,
   product_type VARCHAR(15) NOT NULL,
   price FLOAT NOT NULL,
-  img_dir VARCHAR(100),
   gd_id VARCHAR(15),
   PRIMARY KEY (product_id),
   FOREIGN KEY (gd_id) REFERENCES GDiscount(gd_id)
@@ -47,6 +50,8 @@ CREATE TABLE Branch (
 CREATE TABLE SalesStaff (
   s_id VARCHAR(15) NOT NULL,
   s_name VARCHAR(20) NOT NULL,
+  username VARCHAR(20) NOT NULL,
+  pwd VARCHAR(255) NOT NULL,
   branch_id VARCHAR(15) NOT NULL,
   PRIMARY KEY (s_id),
   FOREIGN KEY (branch_id) REFERENCES Branch(branch_id)
