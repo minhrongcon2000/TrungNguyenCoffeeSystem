@@ -22,8 +22,8 @@ CREATE TABLE LocalManager (
 CREATE TABLE GDiscount (
   gd_id VARCHAR(15) NOT NULL,
   percent FLOAT NOT NULL,
-  valid_from DATE NOT NULL,
-  valid_to DATE NOT NULL,
+  valid_from DATETIME NOT NULL,
+  valid_to DATETIME NOT NULL,
   g_name VARCHAR(50) NOT NULL,
   PRIMARY KEY (gd_id)
 );
@@ -68,8 +68,8 @@ CREATE TABLE Orders (
 );
 CREATE TABLE LDiscount (
   ld_id VARCHAR(15) NOT NULL,
-  valid_from DATE NOT NULL,
-  valid_to DATE NOT NULL,
+  valid_from DATETIME NOT NULL,
+  valid_to DATETIME NOT NULL,
   percent FLOAT NOT NULL,
   l_name VARCHAR(50) NOT NULL,
   branch_id VARCHAR(15) NOT NULL,
