@@ -106,5 +106,6 @@ dist
 # ignore .DS_Store for MacOS X
 .DS_Store
 
-# ignore react default readme
-project/view/README.md
+# ignore configuration file
+project/config.json
+
